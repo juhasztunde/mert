@@ -49,8 +49,9 @@
           <li class="menu-active"><a href="#intro">Főoldal</a></li>
           <li><a href="#about">Események</a></li>
           <!--<li><a href="#speakers">Előadók</a></li>-->
-          <li><a href="#sponsors">Támogatók</a></li>
+          <!--<li><a href="#sponsors">Támogatók</a></li>-->
           <!--<li><a href="index.html#faq">Gyik</a></li>-->
+          <li><a href="#buy-tickets">Tag leszek</a></li>
           <li><a href="#contact2">Kapcsolat</a></li>
           <li><a href="indexeng.html">ENG</a></li>
         </ul>
@@ -65,8 +66,8 @@
     <div class="intro-container wow fadeIn">
       <h1 class="mb-4 pb-0"><span>MERT</span></h1>
       <p class="mb-4 pb-0">Magyar Esztétikai és Restauratív Fogászati Társaság</p>
-      <!--<a href="" class="venobox play-btn mb-4" data-vbtype="video"
-        data-autoplay="true"></a>-->
+      <a target="blank" href="https://www.youtube.com/watch?v=Qa4SiQoGpY0&feature=youtu.be" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
       <a href="#about" class="about-btn scrollto">Legközelebbi eseményünk</a>
     </div>
   </section>
@@ -89,7 +90,7 @@
           </div>
           <div class="col-lg-3">
             <h3>Mikor?</h3>
-            <p>2019.05.21.<br></p>
+            <p>2019.05.31.<br></p>
           </div>
         </div>
       </div>
@@ -227,9 +228,112 @@
 
 -->
   
+
+<!--==========================
+      Buy Ticket Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Legyél Te is MERT tag</h2>
+          <p>Töltsd ki a belépési kérelmet és küldd el nekünk</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Töltsd le a belépési kérelmet</h5>
+                <h6 class="card-price text-center">Belépési nyilatkozat</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>töltsd le a nyilatkozatot</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>töltsd ki az adataidat</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>juttasd el nekünk jelentkezésedet </li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-envelope"></i></span>emailen: <a target="blank" href="mailto:merthungary@gmail.com"> merthungary@gmail.com</a></li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-map"></i></span>postán: 1088 Budapest, Szentkirályi utca 47.</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="" data-target="" data-ticket-type="pro-access"> <a target="blank" href="belepesikerelem.doc" style="color: white">Letöltöm</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Ismerd meg a MERT alapszabályt</h5>
+                <h6 class="card-price text-center">MERT alapszabály</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>töltsd le az alapszabályt</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>ismerd meg, olvasd el </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>ha egyet értesz vele, juttasd el nekünk a tagdíjat </li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-credit-card-alt""></i></span>Magyar Esztétikai és Restauratív Fogászati Társaság</li>
+                  <li class="text-muted"><span class="fa-li"><i class=""></i></span>Unicredit Bank | 10918001-00000098-12220004</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+<button type="button" class="btn" data-toggle="" data-target="" data-ticket-type="pro-access"> <a target="blank" href="alapszabaly.pdf" style="color: white">Letöltöm</a></button>               
+ </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+      <!-- Modal Order Form -->
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control" >
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    </section>
+
+
+
     <!--==========================
       Sponsors Section
     ============================-->
+<!-- 
+
     <section id="sponsors" class="section-with-bg wow fadeInUp">
 
       <div class="container">
@@ -313,7 +417,7 @@
       </div>
 
     </section>
-
+-->
     <!--==========================
       F.A.Q Section
     ============================-->
@@ -371,7 +475,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h2>Ne maradj le</h2>
-          <p>Maradj naprakész és kövess minket a <a target="blank" href="https://www.facebook.com/events/278994432815468/"> facebook oldalunkon  </a></p>
+          <p>Maradj naprakész és kövess minket az esemény<a target="blank" href="https://www.facebook.com/events/278994432815468/"> facebook oldalán  </a></p>
         </div>
 
 
@@ -419,10 +523,24 @@
               <p><a target="blank" href="mailto:merthungary@gmail.com"> merthungary@gmail.com</a></p>
             </div>
           </div>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-12">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Bankszámlaszám</h3>
+              <p>Unicredit Bank </p>
+              <p> Magyar Esztétikai és Restauratív Fogászati Társaság</p>
+              <p>10918001-00000098-12220004</p>
+            </div>
+          </div>
+        </div>
 
         </div>
-      </div>
     </section>
+  </div>
 
 
 <section id="contact" class="section-bg wow fadeInUp">
